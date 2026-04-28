@@ -10,3 +10,4 @@ wheels/
 .venv
 real_dataset/
 outputs/
+synthetic_dataset/

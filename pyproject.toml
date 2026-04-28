@@ -21,6 +21,11 @@ dependencies = [
 # Install CUDA-enabled `torch` from the PyTorch wheel index (avoids CPU-only +cpu
 # resolution from PyPI on Windows/WSL). Switch `cu128` to `cu126` or `cu130` to match
 # your NVIDIA driver if needed. See: https://docs.astral.sh/uv/guides/integration/pytorch/
+[tool.uv]
+# Copy from cache (no cross-FS hardlinks). If installs fail with ESTALE on `.venv`,
+# put the env on local disk: `mkdir -p ~/.venvs/paddling && ln -sfn ~/.venvs/paddling .venv`.
+link-mode = "copy"
+
 [[tool.uv.index]]
 name = "pytorch-cu128"
 url = "https://download.pytorch.org/whl/cu128"
