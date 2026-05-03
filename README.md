@@ -1,10 +1,13 @@
-# paddling
 
-## Environment
+## Fine-Tuning TrOCR on RxHandBD, and Synthetic Data 
 
-This project uses **[uv](https://docs.astral.sh/uv/)** for package and environment management—**not** `pip` / `python -m pip install`.
+This project uses **[uv](https://docs.astral.sh/uv/)** for package and environment management
 
-- Create/update the venv and install dependencies: `uv sync`
-- Run a command in the project environment: `uv run <command>`, e.g. `uv run jupyter lab` or `uv run python -m jupyter lab` to open the TrOCR fine-tuning notebook `main.ipynb`
-
+To Create/update the venv and install dependencies: `uv sync`
 `pyproject.toml` and `uv.lock` (if present) are the source of truth for dependencies.
+
+### Notebook Information:
+- `main.ipynb` - RxHandBD fine tuning
+- `hwt.ipynb` -  Handwriting Transformers Fine Tuning
+- `diffbrush.ipynb` - DiffBrush Fine Tuning
+- `combined.ipynb` - Combine all of them Fine Tuning
