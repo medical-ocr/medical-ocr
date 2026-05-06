@@ -10,4 +10,3 @@ To Create/update the venv and install dependencies: `uv sync`
 - `main.ipynb` - RxHandBD fine tuning
 - `hwt.ipynb` -  Handwriting Transformers Fine Tuning
 - `diffbrush.ipynb` - DiffBrush Fine Tuning
-- `combined.ipynb` - Combine all of them Fine Tuning
